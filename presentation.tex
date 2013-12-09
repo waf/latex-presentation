@@ -1,5 +1,6 @@
 \documentclass{beamer}
 \usetheme[alternativetitlepage=true]{Torino}
+\include{src/pygments}
 
 \author{Will Fuqua}
 \title{\LaTeX{} Part II}
@@ -12,7 +13,8 @@
     \titlepage
 \end{frame}
 
-\begin{frame}[t]{What we'll cover about \LaTeX}
+\begin{frame}
+    \frametitle{What we'll cover about \LaTeX}
     \begin{itemize}
         \item How to write it
             \begin{itemize}
@@ -37,37 +39,70 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{How to write it \textendash{} Vim}
+\begin{frame}
+    \frametitle{How to write it \textendash{} Vim}
     \begin{center}
-        \includegraphics[width=0.8\textwidth]{img/vim}
+        \includegraphics[width=0.8\textwidth]{img/vim.png}
     \end{center}
 \end{frame}
 
-\begin{frame}{How to write it \textendash{} TexMaker}
+\begin{frame}
+    \frametitle{How to write it \textendash{} TexMaker}
     \begin{center}
-        \includegraphics[width=0.8\textwidth]{img/texmaker}
+        \includegraphics[width=0.8\textwidth]{img/texmaker.png}
     \end{center}
 \end{frame}
 
-\begin{frame}{How to write it \textendash{} Lyx}
+\begin{frame}
+    \frametitle{How to write it \textendash{} Lyx}
     \begin{center}
-        \includegraphics[width=0.8\textwidth]{img/lyx}
+        \includegraphics[width=0.8\textwidth]{img/lyx.png}
     \end{center}
 \end{frame}
 
-\begin{frame}{What to write with it \textendash{} Articles}
+\begin{frame}[t]
+    \frametitle{What to write with it \textendash{} Articles}
+    \include{src/article_syntax}
+    \begin{enumerate}
+        \item Set title, author, date
+        \item Specify sections, subsections
+        \item Embed graphs, images, etc.
+    \end{enumerate}
 \end{frame}
 
-\begin{frame}{What to write with it \textendash{} Presentations}
+\begin{frame}[t]
+    \frametitle{What to write with it \textendash{} Presentations}
+    \include{src/presentation_syntax}
+    \begin{enumerate}
+        \item Set title, author, date
+        \item Specify slides
+        \item Slide entrances, transitions
+    \end{enumerate}
 \end{frame}
 
-\begin{frame}{What to write with it \textendash{} R\'{e}sum\'{e}s}
+\begin{frame}[t]
+    \frametitle{What to write with it \textendash{} R\'{e}sum\'{e}s}
+    \include{src/resume_syntax}
+    \begin{enumerate}
+        \item Set contact information
+        \item Specify experience, skills, date ranges
+    \end{enumerate}
 \end{frame}
 
-\begin{frame}{Related topics \textendash{} ConTeXt}
+\begin{frame}
+    \frametitle{Related topics \textendash{} Pandoc}
+    \begin{itemize}
+        \item Markup conversion program
+        \item Convert to/from \LaTeX{}
+    \end{itemize}
 \end{frame}
 
-\begin{frame}{Related topics \textendash{} Pandoc}
+\begin{frame}
+    \frametitle{Related topics \textendash{} XeTeX}
+    \begin{itemize}
+        \item Typography-focused
+        \item UTF-8 input
+    \end{itemize}
 \end{frame}
 \end{document}
 
